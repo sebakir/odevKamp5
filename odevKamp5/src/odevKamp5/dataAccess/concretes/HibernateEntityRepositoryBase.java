@@ -2,14 +2,13 @@ package odevKamp5.dataAccess.concretes;
 
 import java.util.List;
 
+import odevKamp5.dataAccess.abstracts.EntityRepository;
 import odevKamp5.entities.abstracts.Entity;
-import odevKamp5.entities.concretes.User;
 
-
-public class HibernateEntityRepositoryBase<Entity> {
+public class HibernateEntityRepositoryBase<Entity> implements EntityRepository<Entity>{
 	public void add(Entity entity) {
 		System.out.println("Hibernate ile eklendi ");
-		
+
 	}
 
 	public void update(Entity entity) {
@@ -26,12 +25,10 @@ public class HibernateEntityRepositoryBase<Entity> {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
 	public Entity get(int id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
 
-
-	}
-
+}

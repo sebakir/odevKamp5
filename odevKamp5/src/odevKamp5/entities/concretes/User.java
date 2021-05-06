@@ -7,7 +7,6 @@ public class User implements Entity {
 	private int id;
 	private String firstName;
 	private String lastName;
-	private long nationalityId;
 	private String password;
 	private String eMail;
 
@@ -15,12 +14,11 @@ public class User implements Entity {
 		super();
 	}
 
-	public User(int id, String firstName, String lastName, long nationalityId, String password, String eMail) {
+	public User(int id, String firstName, String lastName, String password, String eMail) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.nationalityId = nationalityId;
 		this.password = password;
 		this.eMail = eMail;
 	}
@@ -47,14 +45,6 @@ public class User implements Entity {
 
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
-	}
-
-	public long getNationalityId() {
-		return nationalityId;
-	}
-
-	public void setNationalityId(long nationalityId) {
-		this.nationalityId = nationalityId;
 	}
 
 	public String getPassword() {
