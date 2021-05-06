@@ -18,7 +18,7 @@ public class Main {
 		manager.add(user);
 		System.out.println(authManager.checkEmailValid(user));
 		System.out.println(authManager.checkEmailValid(user1));
-		authManager.checkUser(user, "seckin@gmail.com", "lsdfklsdf");
+		authManager.login(user, "seckin@gmail.com", "lsdfklsdf");
 
 	}
 }
